@@ -1,0 +1,149 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "../bower_components/font-awesome/fonts";
+$white: #fff;
+$navy-blue: #0f1626;
+$success-btn-hover-color: #3aC11f;
+$orange-gold: #a14611; 
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+html, body {
+  height: 100%
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -80px; 
+    &:after {
+      content: "";
+      display: block;
+    }
+  }
+}
+
+.jumbotron {
+  &.header {
+    background-color: #eae9da;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  &.wizard {
+    background-color: $orange-gold;
+  }
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  word-spacing: -0.4em;
+  margin: 0 0 20px 0;
+  color: $orange-gold;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h4 {
+  color: #db9255;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: $white;
+  background-color: #a14611;
+  text-align: center;
+  font-size: 24px;
+  line-height: 54px;
+  z-index: 100;
+  &.active {
+    background-color: $navy-blue;
+    color: #fff;
+    border: none;
+  }
+  &.complete {
+    border-color: #793005;
+    color: #793005;  
+  }
+}
+
+.btn-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  box-shadow: none;
+  margin-bottom: 30px;
+  &:focus {
+    border-color: #db9255; 
+    box-shadow: none; 
+  }
+}
+
+.btn-success {
+  background-color: #3bae24;
+  color: $white;
+  border: none;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: $success-btn-hover-color;
+    color: $white;
+  }
+  &:active {
+    background-color: #2e9a18;
+    color: $white;
+  }
+  &:focus {
+    background-color: $success-btn-hover-color;
+    color: $white;
+    outline: none;
+    box-shadow: none;
+    &:active {
+      background-color: $success-btn-hover-color;
+      color: $white;
+      outline: none;
+      box-shadow: none; 
+    }
+  }
+}
+
+.btn-default {
+  margin-bottom: 20px;
+}
+
+address {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.refresh-result {
+  margin-bottom: 30px;
+}
+
+.fa-spinner {
+  color: $orange-gold;
+}
+
+.jumbotron.footer, .page-wrap:after {
+  height: 80px;
+  padding: 24px 0;
+  margin-bottom: 0; 
+}
+
+.jumbotron.footer {
+  p {
+    font-size: 14px;
+    color: $white;
+  }
+  background-color: #0f1626;
+}
+
